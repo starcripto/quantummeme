@@ -1,110 +1,126 @@
-"use client";
-import React from "react";
-
-function MainComponent() {
-  return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-poppins">
-      <header className="fixed w-full top-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm border-b border-[#2a2a2a]">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-[#ff3366] to-[#9933ff] bg-clip-text text-transparent">
-            Quantum Meme
-          </div>
-          <a
-            href="https://t.me/+DjV9udmqSNAwNDMx"
-            target="_blank"
-            className="bg-gradient-to-r from-[#ff3366] to-[#9933ff] px-6 py-2 rounded-full text-sm hover:opacity-90"
-          >
-            Join Telegram
-          </a>
-        </div>
-      </header>
-
-      <main className="pt-20">
-        <section className="container mx-auto px-4 py-20 text-center">
-          <div className="w-[200px] h-[200px] mx-auto mb-8 bg-gradient-to-r from-[#ff3366] to-[#9933ff] rounded-full flex items-center justify-center">
-            <span className="text-6xl">🚀</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Welcome to Quantum Meme
-          </h1>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            The next generation meme token powered by quantum technology and
-            community-driven innovation
-          </p>
-        </section>
-
-        <section className="container mx-auto px-4 py-12">
-          <div className="max-w-lg mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              Join Our Community
-            </h2>
-            <a
-              href="https://t.me/+DjV9udmqSNAwNDMx"
-              target="_blank"
-              className="inline-block bg-gradient-to-r from-[#ff3366] to-[#9933ff] px-12 py-4 rounded-xl text-xl font-bold hover:opacity-90 transition-all transform hover:scale-105"
-            >
-              Join Telegram
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Meme</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#0a0a0a] text-white">
+    <header class="fixed w-full top-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm border-b border-[#2a2a2a]">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-[#ff3366] to-[#9933ff] bg-clip-text text-transparent">
+                Quantum Meme
+            </div>
+            <a href="https://t.me/+DjV9udmqSNAwNDMx" target="_blank" 
+               class="bg-gradient-to-r from-[#ff3366] to-[#9933ff] px-6 py-2 rounded-full text-sm hover:opacity-90">
+                Join Telegram
             </a>
-          </div>
-        </section>
+        </div>
+    </header>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
-              <p className="text-gray-400">Total Supply</p>
-              <p className="text-xl font-bold">1,000,000,000</p>
+    <main class="pt-20">
+        <section class="container mx-auto px-4 py-20 text-center">
+            <div class="w-[200px] h-[200px] mx-auto mb-8 bg-gradient-to-r from-[#ff3366] to-[#9933ff] rounded-full flex items-center justify-center">
+                <span class="text-6xl">🚀</span>
             </div>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
-              <p className="text-gray-400">Tokens Sold</p>
-              <p className="text-xl font-bold">650,000,000</p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
-              <p className="text-gray-400">Initial Price</p>
-              <p className="text-xl font-bold">$0.001</p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
-              <p className="text-gray-400">Launch Date</p>
-              <p className="text-xl font-bold">March 15, 2025</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="container mx-auto px-4 py-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">About Quantum Meme</h2>
-            <p className="text-gray-400 mb-6">
-              Quantum Meme is revolutionizing the meme token space by combining
-              cutting-edge quantum technology with community-driven innovation.
-              Our token represents the perfect fusion of humor and technological
-              advancement in the crypto space.
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Welcome to Quantum Meme
+            </h1>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                The next generation meme token powered by quantum technology and community-driven innovation
             </p>
-          </div>
         </section>
-      </main>
 
-      <footer className="bg-[#1a1a1a] border-t border-[#2a2a2a]">
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex justify-center space-x-6">
-            <a href="#" className="text-gray-400 hover:text-[#ff3366]">
-              <i className="fab fa-twitter text-xl"></i>
-            </a>
-            <a
-              href="https://t.me/+DjV9udmqSNAwNDMx"
-              className="text-gray-400 hover:text-[#ff3366]"
-            >
-              <i className="fab fa-telegram text-xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#ff3366]">
-              <i className="fab fa-discord text-xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#ff3366]">
-              <i className="fab fa-medium text-xl"></i>
-            </a>
-          </div>
+        <section class="container mx-auto px-4 py-12">
+            <div class="max-w-lg mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">
+                    Join Our Community
+                </h2>
+                <a href="https://t.me/+DjV9udmqSNAwNDMx" target="_blank"
+                   class="inline-block bg-gradient-to-r from-[#ff3366] to-[#9933ff] px-12 py-4 rounded-xl text-xl font-bold hover:opacity-90 transition-all transform hover:scale-105">
+                    Join Telegram
+                </a>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
+                    <p class="text-gray-400">Total Supply</p>
+                    <p class="text-xl font-bold">1,000,000,000</p>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
+                    <p class="text-gray-400">Tokens Sold</p>
+                    <p class="text-xl font-bold">650,000,000</p>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
+                    <p class="text-gray-400">Initial Price</p>
+                    <p class="text-xl font-bold">$0.001</p>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a]">
+                    <p class="text-gray-400">Launch Date</p>
+                    <p class="text-xl font-bold">March 15, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-12">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">About Quantum Meme</h2>
+                <p class="text-gray-400 mb-6">
+                    Quantum Meme is revolutionizing the meme token space by combining cutting-edge quantum technology with community-driven innovation. Our token represents the perfect fusion of humor and technological advancement in the crypto space.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#1a1a1a] border-t border-[#2a2a2a]">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-[#ff3366]">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://t.me/+DjV9udmqSNAwNDMx" class="text-gray-400 hover:text-[#ff3366]">
+                    <i class="fab fa-telegram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-[#ff3366]">
+                    <i class="fab fa-discord text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-[#ff3366]">
+                    <i class="fab fa-medium text-xl"></i>
+                </a>
+            </div>
         </div>
-      </footer>
-    </div>
-  );
-}
+    </footer>
 
-export default MainComponent;
+    <script>
+        // Contador regresivo
+        function updateCountdown() {
+            const endDate = new Date("2025-03-15").getTime();
+            const now = new Date().getTime();
+            const distance = endDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
